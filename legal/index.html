@@ -1,7 +1,14 @@
 <!doctype html>
 <!--
   Fonte da pagina publicada em https://baraldim.github.io/legal/ (repositorio
-  BaraldiM.github.io, pasta legal/). Alterar aqui e copiar para la.
+  BaraldiM.github.io, pasta legal/). A pagina e compartilhada pelos apps da
+  Banu Apps e cada app guarda uma copia em docs/legal/index.html. Ao alterar,
+  partir SEMPRE da versao publicada (a do site), nunca da copia de um app,
+  para nao apagar o que outro app acrescentou.
+
+  Apps cobertos: Wort des Tages - Bibel / Palavra do Dia (frases_biblicas) e
+  Bibel - Tagesandacht / Biblia e Devocional Diario (biblia_estudo, o unico
+  com conta e sincronizacao).
 
   PENDENTE, e nao da para resolver neste arquivo: a ficha de Seguranca de
   Dados na Play Console ainda declara "nenhum dado coletado". Isso nao bate
@@ -13,7 +20,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Banu Apps — Privacy &amp; Legal Notice</title>
-<meta name="description" content="Privacy policy and legal notice (Impressum) for the Banu Apps applications, including Wort des Tages – Bibel / Palavra do Dia.">
+<meta name="description" content="Privacy policy and legal notice (Impressum) for the Banu Apps applications, including Wort des Tages – Bibel / Palavra do Dia and Bibel – Tagesandacht / Bíblia e Devocional Diário.">
 <style>
   :root{
     --bg:#ffffff; --fg:#1f2937; --muted:#6b7280; --rule:#e5e7eb;
@@ -83,7 +90,7 @@
   <p class="updated">Zuletzt aktualisiert: 29. Oktober 2026</p>
 
   <p>Diese Erklärung gilt für die mobilen Apps von Banu Apps, einschließlich
-  <em>Wort des Tages – Bibel</em>. Verantwortlich im Sinne der DSGVO ist die
+  <em>Wort des Tages – Bibel</em> und <em>Bibel – Tagesandacht</em>. Verantwortlich im Sinne der DSGVO ist die
   im <a href="#impressum-de">Impressum</a> genannte Person.</p>
 
   <h2>Daten, die auf deinem Gerät bleiben</h2>
@@ -91,9 +98,23 @@
   und alle Darstellungseinstellungen werden ausschließlich lokal auf deinem
   Gerät gespeichert. Sie werden nicht an uns übertragen. Wenn du die App
   deinstallierst, sind diese Daten gelöscht.</p>
+  <p>In <em>Bibel – Tagesandacht</em> gilt das ebenso für Notizen,
+  Markierungen, Lesefortschritt und Lesepläne — solange du dich nicht
+  anmeldest. Die Anmeldung ist freiwillig; die App funktioniert vollständig
+  ohne Konto.</p>
 
   <h2>Daten, die verarbeitet werden</h2>
   <ul>
+    <li><strong>Konto und Synchronisierung (nur <em>Bibel – Tagesandacht</em>,
+    freiwillig).</strong> Wenn du dich mit Google anmeldest, erhalten wir über
+    Firebase Authentication deinen Namen, deine E-Mail-Adresse, dein
+    Profilbild und eine Nutzer-ID. In Cloud Firestore werden dann deine
+    Notizen und Markierungen, dein Lesefortschritt, der Fortschritt in
+    Leseplänen, deine Serie und deine App-Einstellungen (Sprache,
+    Bibelübersetzung, Schriftgröße, Farben, Erinnerungszeit) gespeichert,
+    damit sie auf deinen anderen Geräten verfügbar sind. Nur dein Konto hat
+    Zugriff darauf. Rechtsgrundlage ist die Erbringung der von dir gewünschten
+    Funktion, Art. 6 Abs. 1 lit. b DSGVO.</li>
     <li><strong>Werbung (Google AdMob).</strong> Die kostenlose Version zeigt
     Werbung. AdMob verarbeitet dazu deine Werbe-ID, die ungefähre Region aus
     der IP-Adresse und Interaktionen mit Anzeigen. Rechtsgrundlage ist deine
@@ -111,7 +132,15 @@
     <li><strong>Feedback-Formular.</strong> Nur wenn du es selbst absendest:
     dein Text, die App-Version und dein Gerätemodell. Eine E-Mail-Adresse wird
     übermittelt, wenn du sie freiwillig einträgst — ohne sie können wir nicht
-    antworten. Rechtsgrundlage ist deine Einwilligung.</li>
+    antworten. Bist du in <em>Bibel – Tagesandacht</em> angemeldet, wird
+    zusätzlich deine Nutzer-ID mitgeschickt. Rechtsgrundlage ist deine
+    Einwilligung.</li>
+    <li><strong>Missbrauchsschutz und Konfiguration (Firebase App Check,
+    Google Play Integrity, Firebase Remote Config).</strong> Technische
+    Kennungen der App-Installation, mit denen geprüft wird, dass Anfragen von
+    einer echten Kopie der App stammen, und mit denen wir zum Beispiel eine
+    Mindestversion festlegen. Berechtigtes Interesse, Art. 6 Abs. 1 lit. f
+    DSGVO.</li>
     <li><strong>Käufe.</strong> Käufe laufen vollständig über Google Play. Wir
     erhalten keine Zahlungsdaten, keine Kartennummer und keine Adresse,
     sondern nur die Bestätigung, dass ein Kauf gültig ist.</li>
@@ -126,7 +155,9 @@
   <h2>Speicherdauer</h2>
   <p>Absturz- und Nutzungsdaten werden nach den Standardfristen von Firebase
   gelöscht (in der Regel 2 bis 14 Monate). Feedback-Nachrichten löschen wir,
-  sobald das Anliegen erledigt ist, spätestens nach 24 Monaten.</p>
+  sobald das Anliegen erledigt ist, spätestens nach 24 Monaten. Konto und
+  synchronisierte Inhalte bleiben gespeichert, bis du das Konto löschst; dann
+  werden sie sofort entfernt.</p>
 
   <h2>Deine Rechte</h2>
   <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
@@ -140,18 +171,23 @@
   wissentlich keine Daten von ihnen.</p>
 
   <h2 id="delete-de">Datenlöschung</h2>
-  <p>So forderst du die Löschung deiner Daten aus der App
-  <strong>Wort des Tages – Bibel</strong> von <strong>Banu Apps</strong> an:</p>
+  <p>So forderst du die Löschung deiner Daten aus den Apps
+  <strong>Wort des Tages – Bibel</strong> und <strong>Bibel –
+  Tagesandacht</strong> von <strong>Banu Apps</strong> an:</p>
   <ol>
     <li>Schreibe eine E-Mail an <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a> mit dem
     Betreff <em>Datenlöschung</em>.</li>
-    <li>Nenne darin dein Gerätemodell und, falls du uns schon einmal
-    geschrieben hast, die damals verwendete E-Mail-Adresse. Nur damit können
-    wir deinen Eintrag finden.</li>
+    <li>Nenne darin die App, dein Gerätemodell und, falls du uns schon
+    einmal geschrieben hast, die damals verwendete E-Mail-Adresse. Hast du
+    dich in <em>Bibel – Tagesandacht</em> angemeldet, nenne auch die
+    E-Mail-Adresse dieses Google-Kontos. Nur damit können wir deinen Eintrag
+    finden.</li>
     <li>Wir bestätigen die Löschung innerhalb von 30 Tagen.</li>
   </ol>
   <p><strong>Was gelöscht wird:</strong> die Feedback-Nachrichten, die du
-  abgeschickt hast, und die E-Mail-Adresse, die du dabei angegeben hast.</p>
+  abgeschickt hast, und die E-Mail-Adresse, die du dabei angegeben hast; bei
+  einem Konto in <em>Bibel – Tagesandacht</em> außerdem alles unter
+  „Konto löschen“ unten Genannte.</p>
   <p><strong>Was du selbst löschst:</strong> Favoriten, Verlauf, Streak,
   Erinnerungen und Einstellungen liegen nur auf deinem Gerät — die
   Deinstallation der App löscht sie, ganz ohne Anfrage.</p>
@@ -159,6 +195,27 @@
   Absturzdaten sind dir nicht zugeordnet und lassen sich nicht einzeln
   auffinden. Sie verfallen automatisch nach den Standardfristen von Firebase,
   also nach 2 bis 14 Monaten.</p>
+
+  <h3 id="account-de">Konto löschen (<em>Bibel – Tagesandacht</em>)</h3>
+  <ol>
+    <li><strong>In der App:</strong> <em>Einstellungen → Daten löschen →
+    Konto löschen</em> (nur sichtbar, wenn du angemeldet bist) und zweimal
+    bestätigen. Die Löschung erfolgt sofort.</li>
+    <li><strong>Ohne die App:</strong> eine E-Mail an
+    <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a>
+    mit dem Betreff <em>Kontolöschung</em> und der E-Mail-Adresse des
+    Google-Kontos, mit dem du dich angemeldet hast. Wir löschen innerhalb von
+    30 Tagen und bestätigen dir das.</li>
+  </ol>
+  <p><strong>Was gelöscht wird:</strong> das Konto (Name, E-Mail-Adresse,
+  Profilbild, Nutzer-ID) und alle synchronisierten Inhalte — Notizen,
+  Markierungen, Lesefortschritt, Lesepläne, Serie und Einstellungen. Es
+  bleibt keine Kopie bei uns. Feedback, das du angemeldet geschickt hast,
+  löschen wir auf Anfrage mit.</p>
+  <p><strong>Was bleibt:</strong> die Kopie auf deinem Gerät, bis du die App
+  deinstallierst (die Löschung in der App entfernt auch sie), und die
+  pseudonymen Nutzungs- und Absturzdaten, die nach 2 bis 14 Monaten
+  verfallen.</p>
 
   <h2 id="impressum-de">Impressum</h2>
   <p>Angaben gemäß § 5 DDG (ehemals § 5 TMG):</p>
@@ -186,16 +243,28 @@
   <p class="updated">Last updated: 29 October 2026</p>
 
   <p>This policy covers the Banu Apps mobile applications, including
-  <em>Palavra do Dia / Daily Bible Verses</em>. The data controller is the
+  <em>Palavra do Dia / Daily Bible Verses</em> and <em>Bible &amp; Daily
+  Devotional</em>. The data controller is the
   person named in the <a href="#impressum-en">legal notice</a>.</p>
 
   <h2>Data that stays on your device</h2>
   <p>Your favourites, your history, your daily streak, your reminder time and
   every appearance setting are stored only on your device. They are never sent
   to us. Uninstalling the app deletes them.</p>
+  <p>In <em>Bible &amp; Daily Devotional</em> the same applies to your notes,
+  highlights, reading progress and reading plans — as long as you do not sign
+  in. Signing in is optional; the app works fully without an account.</p>
 
   <h2>Data that is processed</h2>
   <ul>
+    <li><strong>Account and sync (<em>Bible &amp; Daily Devotional</em> only,
+    optional).</strong> If you sign in with Google, Firebase Authentication
+    gives us your name, email address, profile picture and a user ID. Cloud
+    Firestore then stores your notes and highlights, reading progress,
+    reading-plan progress, streak and app settings (language, Bible version,
+    font size, colours, reminder time), so they are available on your other
+    devices. Only your account can access them. The legal basis is providing
+    the feature you asked for (Art. 6(1)(b) GDPR).</li>
     <li><strong>Advertising (Google AdMob).</strong> The free version shows
     ads. To do that, AdMob processes your advertising ID, an approximate region
     derived from your IP address, and your interactions with ads. This is based
@@ -211,7 +280,14 @@
     instance ID, device model and country. They do not identify you.</li>
     <li><strong>Feedback form.</strong> Only if you send it yourself: your
     message, the app version and your device model. An email address is sent
-    only if you choose to type one — without it we cannot reply.</li>
+    only if you choose to type one — without it we cannot reply. If you are
+    signed in to <em>Bible &amp; Daily Devotional</em>, your user ID is sent
+    too.</li>
+    <li><strong>Abuse protection and configuration (Firebase App Check,
+    Google Play Integrity, Firebase Remote Config).</strong> Technical
+    identifiers of the app installation, used to check that requests come
+    from a genuine copy of the app and to set things such as a minimum
+    version.</li>
     <li><strong>Purchases.</strong> Purchases are handled entirely by Google
     Play. We never receive payment details, card numbers or addresses — only
     the confirmation that a purchase is valid.</li>
@@ -224,7 +300,9 @@
   <h2>Retention</h2>
   <p>Crash and usage data are deleted according to Firebase's standard
   retention periods (typically 2 to 14 months). Feedback messages are deleted
-  once the matter is resolved, and after 24 months at the latest.</p>
+  once the matter is resolved, and after 24 months at the latest. Your
+  account and synced content are kept until you delete the account, and are
+  then removed immediately.</p>
 
   <h2>Your rights</h2>
   <p>You may request access to your data, its correction or deletion, a
@@ -238,17 +316,22 @@
 
   <h2 id="delete-en">Data deletion</h2>
   <p>To request deletion of your data from the <strong>Palavra do Dia /
-  Daily Bible Verses</strong> app by <strong>Banu Apps</strong>, follow these
+  Daily Bible Verses</strong> and <strong>Bible &amp; Daily
+  Devotional</strong> apps by <strong>Banu Apps</strong>, follow these
   steps:</p>
   <ol>
     <li>Send an email to <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a> with the subject
     <em>Data deletion</em>.</li>
-    <li>State your device model and, if you have written to us before, the
-    email address you used then. That is what lets us find your record.</li>
+    <li>State the app, your device model and, if you have written to us
+    before, the email address you used then. If you signed in to <em>Bible
+    &amp; Daily Devotional</em>, also give the email address of that Google
+    account. That is what lets us find your record.</li>
     <li>We confirm the deletion within 30 days.</li>
   </ol>
   <p><strong>What is deleted:</strong> the feedback messages you sent and the
-  email address you gave with them.</p>
+  email address you gave with them; for an account in <em>Bible &amp; Daily
+  Devotional</em>, also everything listed under “Delete your account”
+  below.</p>
   <p><strong>What you delete yourself:</strong> favourites, history, streak,
   reminders and settings live only on your device — uninstalling the app
   erases them, with no request needed.</p>
@@ -256,6 +339,25 @@
   crash data are not tied to you and cannot be located per person. They expire
   on their own under Firebase's standard retention, between 2 and 14
   months.</p>
+
+  <h3 id="account-en">Delete your account (<em>Bible &amp; Daily Devotional</em>)</h3>
+  <ol>
+    <li><strong>In the app:</strong> <em>Settings → Clear Data → Delete
+    Account</em> (shown only while you are signed in), then confirm twice.
+    Deletion is immediate.</li>
+    <li><strong>Without the app:</strong> email
+    <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a>
+    with the subject <em>Account deletion</em> and the email address of the
+    Google account you signed in with. We delete it within 30 days and
+    confirm to you.</li>
+  </ol>
+  <p><strong>What is deleted:</strong> the account (name, email address,
+  profile picture, user ID) and all synced content — notes, highlights,
+  reading progress, reading plans, streak and settings. We keep no copy.
+  Feedback you sent while signed in is deleted too, on request.</p>
+  <p><strong>What is kept:</strong> the copy on your device until you
+  uninstall the app (deleting in the app removes it as well), and the
+  pseudonymous usage and crash data, which expire after 2 to 14 months.</p>
 
   <h2 id="impressum-en">Legal notice and contact</h2>
   <div class="box">
@@ -275,16 +377,30 @@
   <p class="updated">Última atualização: 29 de outubro de 2026</p>
 
   <p>Esta política vale para os aplicativos da Banu Apps, incluindo
-  <em>Palavra do Dia</em>. O responsável pelo tratamento dos dados é a pessoa
+  <em>Palavra do Dia</em> e <em>Bíblia e Devocional Diário</em>. O responsável pelo tratamento dos dados é a pessoa
   indicada em <a href="#impressum-pt">quem somos e contato</a>.</p>
 
   <h2>Dados que ficam no seu aparelho</h2>
   <p>Seus favoritos, seu histórico, sua sequência diária, o horário do lembrete
   e todos os ajustes de aparência ficam gravados somente no seu aparelho. Nada
   disso é enviado para nós. Ao desinstalar o app, esses dados são apagados.</p>
+  <p>No <em>Bíblia e Devocional Diário</em> vale o mesmo para suas notas,
+  marcações, progresso de leitura e planos de leitura — enquanto você não
+  entrar com uma conta. Entrar é opcional; o app funciona inteiro sem
+  conta.</p>
 
   <h2>Dados que são tratados</h2>
   <ul>
+    <li><strong>Conta e sincronização (só no <em>Bíblia e Devocional
+    Diário</em>, opcional).</strong> Se você entrar com o Google, recebemos
+    pelo Firebase Authentication o seu nome, e-mail, foto de perfil e um
+    identificador de usuário. O Cloud Firestore passa então a guardar suas
+    notas e marcações, o progresso de leitura, o progresso nos planos de
+    leitura, a sua sequência e os ajustes do app (idioma, versão da Bíblia,
+    tamanho da letra, cores, horário do lembrete), para que estejam nos seus
+    outros aparelhos. Só a sua conta tem acesso a eles. A base é a execução
+    do recurso que você pediu (art. 7º, V, da LGPD; art. 6º, 1, b, do
+    GDPR).</li>
     <li><strong>Anúncios (Google AdMob).</strong> A versão gratuita exibe
     anúncios. Para isso, o AdMob trata o seu identificador de publicidade, a
     região aproximada obtida do endereço IP e as interações com os anúncios.
@@ -301,7 +417,14 @@
     você.</li>
     <li><strong>Formulário de feedback.</strong> Só se você mesmo enviar: a sua
     mensagem, a versão do app e o modelo do aparelho. O e-mail só é enviado se
-    você optar por escrevê-lo — sem ele não temos como responder.</li>
+    você optar por escrevê-lo — sem ele não temos como responder. Se você
+    estiver conectado no <em>Bíblia e Devocional Diário</em>, vai junto o seu
+    identificador de usuário.</li>
+    <li><strong>Proteção contra abuso e configuração (Firebase App Check,
+    Google Play Integrity, Firebase Remote Config).</strong> Identificadores
+    técnicos da instalação do app, usados para conferir que os pedidos vêm de
+    uma cópia legítima do app e para definir, por exemplo, uma versão
+    mínima.</li>
     <li><strong>Compras.</strong> As compras são processadas inteiramente pelo
     Google Play. Não recebemos dados de pagamento, número de cartão nem
     endereço — apenas a confirmação de que a compra é válida.</li>
@@ -315,7 +438,9 @@
   <h2>Por quanto tempo guardamos</h2>
   <p>Dados de falha e de uso são apagados conforme os prazos padrão do Firebase
   (em geral de 2 a 14 meses). Mensagens de feedback são apagadas assim que o
-  assunto é resolvido, e no máximo em 24 meses.</p>
+  assunto é resolvido, e no máximo em 24 meses. A conta e o conteúdo
+  sincronizado ficam guardados até você excluir a conta, e então são
+  apagados na hora.</p>
 
   <h2>Seus direitos</h2>
   <p>Você pode pedir acesso aos seus dados, correção, exclusão, limitação do
@@ -328,19 +453,22 @@
   delas de forma consciente.</p>
 
   <h2 id="delete-pt">Exclusão de dados</h2>
-  <p>Para pedir a exclusão dos seus dados do app
-  <strong>Palavra do Dia</strong>, da <strong>Banu Apps</strong>, siga estes
-  passos:</p>
+  <p>Para pedir a exclusão dos seus dados dos apps
+  <strong>Palavra do Dia</strong> e <strong>Bíblia e Devocional
+  Diário</strong>, da <strong>Banu Apps</strong>, siga estes passos:</p>
   <ol>
     <li>Envie um e-mail para <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a> com o assunto
     <em>Exclusão de dados</em>.</li>
-    <li>Diga no corpo da mensagem o modelo do seu aparelho e, se você já nos
-    escreveu antes, o e-mail que usou na ocasião. É o que nos permite
-    localizar o seu registro.</li>
+    <li>Diga no corpo da mensagem qual é o app, o modelo do seu aparelho e,
+    se você já nos escreveu antes, o e-mail que usou na ocasião. Se entrou
+    com conta no <em>Bíblia e Devocional Diário</em>, diga também o e-mail
+    dessa conta Google. É o que nos permite localizar o seu registro.</li>
     <li>Respondemos confirmando a exclusão em até 30 dias.</li>
   </ol>
   <p><strong>O que é excluído:</strong> as mensagens de feedback que você
-  enviou e o endereço de e-mail que tiver deixado junto delas.</p>
+  enviou e o endereço de e-mail que tiver deixado junto delas; se você tem
+  conta no <em>Bíblia e Devocional Diário</em>, também tudo o que está em
+  “Excluir a conta”, abaixo.</p>
   <p><strong>O que você mesmo exclui:</strong> favoritos, histórico,
   sequência, lembretes e ajustes ficam só no seu aparelho — desinstalar o app
   apaga tudo isso, sem precisar pedir nada.</p>
@@ -348,6 +476,25 @@
   pseudonimizados de uso e de falha não ficam ligados a você e não dá para
   localizá-los por pessoa. Eles são apagados sozinhos pelos prazos padrão do
   Firebase, de 2 a 14 meses.</p>
+
+  <h3 id="account-pt">Excluir a conta (<em>Bíblia e Devocional Diário</em>)</h3>
+  <ol>
+    <li><strong>No app:</strong> <em>Configurações → Limpar Dados → Excluir
+    Conta</em> (só aparece com a conta conectada) e confirme duas vezes. A
+    exclusão é imediata.</li>
+    <li><strong>Sem o app:</strong> envie um e-mail para
+    <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a>
+    com o assunto <em>Exclusão de conta</em> e o e-mail da conta Google com
+    que você entrou. Excluímos em até 30 dias e confirmamos para você.</li>
+  </ol>
+  <p><strong>O que é excluído:</strong> a conta (nome, e-mail, foto de
+  perfil, identificador de usuário) e todo o conteúdo sincronizado — notas,
+  marcações, progresso de leitura, planos, sequência e ajustes. Não fica
+  cópia conosco. O feedback que você enviou conectado também é apagado, a
+  pedido.</p>
+  <p><strong>O que é mantido:</strong> a cópia no seu aparelho, até você
+  desinstalar o app (a exclusão feita no app também a apaga), e os dados
+  pseudonimizados de uso e de falha, que expiram em 2 a 14 meses.</p>
 
   <h2 id="impressum-pt">Quem somos e contato</h2>
   <div class="box">
