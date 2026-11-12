@@ -6,9 +6,10 @@
   partir SEMPRE da versao publicada (a do site), nunca da copia de um app,
   para nao apagar o que outro app acrescentou.
 
-  Apps cobertos: Wort des Tages - Bibel / Palavra do Dia (frases_biblicas) e
-  Bibel - Tagesandacht / Biblia e Devocional Diario (biblia_estudo, o unico
-  com conta e sincronizacao).
+  Apps cobertos: Wort des Tages - Bibel / Palavra do Dia (frases_biblicas),
+  Bibel - Tagesandacht / Biblia e Devocional Diario (biblia_estudo) e
+  Pomodorus (pomodoro). Os dois ultimos tem conta Google opcional e
+  sincronizacao em Firestore, cada um com a sua secao de exclusao de conta.
 
   PENDENTE, e nao da para resolver neste arquivo: a ficha de Seguranca de
   Dados na Play Console ainda declara "nenhum dado coletado". Isso nao bate
@@ -20,7 +21,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Banu Apps — Privacy &amp; Legal Notice</title>
-<meta name="description" content="Privacy policy and legal notice (Impressum) for the Banu Apps applications, including Wort des Tages – Bibel / Palavra do Dia and Bibel – Tagesandacht / Bíblia e Devocional Diário.">
+<meta name="description" content="Privacy policy and legal notice (Impressum) for the Banu Apps applications, including Wort des Tages – Bibel / Palavra do Dia, Bibel – Tagesandacht / Bíblia e Devocional Diário and Pomodorus.">
 <style>
   :root{
     --bg:#ffffff; --fg:#1f2937; --muted:#6b7280; --rule:#e5e7eb;
@@ -87,10 +88,11 @@
 <!-- ===================== DEUTSCH ===================== -->
 <section id="de" lang="de">
   <h1>Datenschutzerklärung</h1>
-  <p class="updated">Zuletzt aktualisiert: 29. Oktober 2026</p>
+  <p class="updated">Zuletzt aktualisiert: 12. November 2026</p>
 
   <p>Diese Erklärung gilt für die mobilen Apps von Banu Apps, einschließlich
-  <em>Wort des Tages – Bibel</em> und <em>Bibel – Tagesandacht</em>. Verantwortlich im Sinne der DSGVO ist die
+  <em>Wort des Tages – Bibel</em>, <em>Bibel – Tagesandacht</em> und
+  <em>Pomodorus</em>. Verantwortlich im Sinne der DSGVO ist die
   im <a href="#impressum-de">Impressum</a> genannte Person.</p>
 
   <h2>Daten, die auf deinem Gerät bleiben</h2>
@@ -102,18 +104,27 @@
   Markierungen, Lesefortschritt und Lesepläne — solange du dich nicht
   anmeldest. Die Anmeldung ist freiwillig; die App funktioniert vollständig
   ohne Konto.</p>
+  <p>In <em>Pomodorus</em> gilt das ebenso für deine Aufgaben, den
+  Fokusverlauf (Minuten und Zyklen pro Tag), die Serie, den Wochenplan, die
+  Notizen (einschließlich Ablenkungsliste und Fokus-Tagebuch) und die
+  Timer-Einstellungen — solange du das Cloud-Backup nicht einschaltest. Das
+  Backup ist freiwillig; die App funktioniert vollständig ohne Konto.</p>
 
   <h2>Daten, die verarbeitet werden</h2>
   <ul>
-    <li><strong>Konto und Synchronisierung (nur <em>Bibel – Tagesandacht</em>,
-    freiwillig).</strong> Wenn du dich mit Google anmeldest, erhalten wir über
-    Firebase Authentication deinen Namen, deine E-Mail-Adresse, dein
-    Profilbild und eine Nutzer-ID. In Cloud Firestore werden dann deine
+    <li><strong>Konto und Synchronisierung (<em>Bibel – Tagesandacht</em> und
+    <em>Pomodorus</em>, freiwillig).</strong> Wenn du dich mit Google
+    anmeldest, erhalten wir über Firebase Authentication deinen Namen, deine
+    E-Mail-Adresse, dein Profilbild und eine Nutzer-ID. In <em>Bibel –
+    Tagesandacht</em> werden dann in Cloud Firestore deine
     Notizen und Markierungen, dein Lesefortschritt, der Fortschritt in
     Leseplänen, deine Serie und deine App-Einstellungen (Sprache,
-    Bibelübersetzung, Schriftgröße, Farben, Erinnerungszeit) gespeichert,
-    damit sie auf deinen anderen Geräten verfügbar sind. Nur dein Konto hat
-    Zugriff darauf. Rechtsgrundlage ist die Erbringung der von dir gewünschten
+    Bibelübersetzung, Schriftgröße, Farben, Erinnerungszeit) gespeichert. In
+    <em>Pomodorus</em> sind es deine Aufgaben, der Fokusverlauf, Serie und
+    Ziele, der Wochenplan, die Notizen und die App-Einstellungen (Dauern,
+    Farbschema, Zifferblatt, Erinnerungen). So sind deine Daten auf deinen
+    anderen Geräten verfügbar und kommen bei einem Gerätewechsel zurück. Nur
+    dein Konto hat Zugriff darauf. Rechtsgrundlage ist die Erbringung der von dir gewünschten
     Funktion, Art. 6 Abs. 1 lit. b DSGVO.</li>
     <li><strong>Werbung (Google AdMob).</strong> Die kostenlose Version zeigt
     Werbung. AdMob verarbeitet dazu deine Werbe-ID, die ungefähre Region aus
@@ -132,8 +143,9 @@
     <li><strong>Feedback-Formular.</strong> Nur wenn du es selbst absendest:
     dein Text, die App-Version und dein Gerätemodell. Eine E-Mail-Adresse wird
     übermittelt, wenn du sie freiwillig einträgst — ohne sie können wir nicht
-    antworten. Bist du in <em>Bibel – Tagesandacht</em> angemeldet, wird
-    zusätzlich deine Nutzer-ID mitgeschickt. Rechtsgrundlage ist deine
+    antworten. Bist du in <em>Bibel – Tagesandacht</em> oder
+    <em>Pomodorus</em> angemeldet, wird zusätzlich deine Nutzer-ID
+    mitgeschickt. Rechtsgrundlage ist deine
     Einwilligung.</li>
     <li><strong>Missbrauchsschutz und Konfiguration (Firebase App Check,
     Google Play Integrity, Firebase Remote Config).</strong> Technische
@@ -172,22 +184,23 @@
 
   <h2 id="delete-de">Datenlöschung</h2>
   <p>So forderst du die Löschung deiner Daten aus den Apps
-  <strong>Wort des Tages – Bibel</strong> und <strong>Bibel –
-  Tagesandacht</strong> von <strong>Banu Apps</strong> an:</p>
+  <strong>Wort des Tages – Bibel</strong>, <strong>Bibel –
+  Tagesandacht</strong> und <strong>Pomodorus</strong> von <strong>Banu
+  Apps</strong> an:</p>
   <ol>
     <li>Schreibe eine E-Mail an <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a> mit dem
     Betreff <em>Datenlöschung</em>.</li>
     <li>Nenne darin die App, dein Gerätemodell und, falls du uns schon
     einmal geschrieben hast, die damals verwendete E-Mail-Adresse. Hast du
-    dich in <em>Bibel – Tagesandacht</em> angemeldet, nenne auch die
-    E-Mail-Adresse dieses Google-Kontos. Nur damit können wir deinen Eintrag
+    dich in <em>Bibel – Tagesandacht</em> oder <em>Pomodorus</em>
+    angemeldet, nenne auch die E-Mail-Adresse dieses Google-Kontos. Nur damit können wir deinen Eintrag
     finden.</li>
     <li>Wir bestätigen die Löschung innerhalb von 30 Tagen.</li>
   </ol>
   <p><strong>Was gelöscht wird:</strong> die Feedback-Nachrichten, die du
   abgeschickt hast, und die E-Mail-Adresse, die du dabei angegeben hast; bei
-  einem Konto in <em>Bibel – Tagesandacht</em> außerdem alles unter
-  „Konto löschen“ unten Genannte.</p>
+  einem Konto in <em>Bibel – Tagesandacht</em> oder <em>Pomodorus</em>
+  außerdem alles unter „Konto löschen“ unten Genannte.</p>
   <p><strong>Was du selbst löschst:</strong> Favoriten, Verlauf, Streak,
   Erinnerungen und Einstellungen liegen nur auf deinem Gerät — die
   Deinstallation der App löscht sie, ganz ohne Anfrage.</p>
@@ -217,6 +230,29 @@
   pseudonymen Nutzungs- und Absturzdaten, die nach 2 bis 14 Monaten
   verfallen.</p>
 
+  <h3 id="account-pomodorus-de">Konto löschen (<em>Pomodorus</em>)</h3>
+  <ol>
+    <li><strong>In der App:</strong> <em>Einstellungen → Konto und Daten
+    löschen</em> (ganz unten, nur sichtbar, wenn das Backup aktiv ist),
+    <em>LÖSCHEN</em> eintippen und bestätigen. Die Löschung erfolgt
+    sofort.</li>
+    <li><strong>Ohne die App:</strong> eine E-Mail an
+    <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a>
+    mit dem Betreff <em>Kontolöschung – Pomodorus</em> und der
+    E-Mail-Adresse des Google-Kontos, mit dem du dich angemeldet hast. Wir
+    löschen innerhalb von 30 Tagen und bestätigen dir das.</li>
+  </ol>
+  <p><strong>Was gelöscht wird:</strong> das Konto (Name, E-Mail-Adresse,
+  Profilbild, Nutzer-ID) und alles, was in der Cloud gespeichert ist —
+  Aufgaben, Fokusverlauf, Serie, Wochenplan, Notizen und Einstellungen. Es
+  bleibt keine Kopie bei uns. Feedback, das du angemeldet geschickt hast,
+  löschen wir auf Anfrage mit.</p>
+  <p><strong>Was bleibt:</strong> Die Löschung in der App entfernt auch die
+  Kopie auf deinem Gerät. Ein gekauftes Premium geht nicht verloren: Es
+  gehört zu deinem Google-Play-Konto und kommt beim nächsten Öffnen der App
+  zurück. Pseudonyme Nutzungs- und Absturzdaten verfallen nach 2 bis 14
+  Monaten.</p>
+
   <h2 id="impressum-de">Impressum</h2>
   <p>Angaben gemäß § 5 DDG (ehemals § 5 TMG):</p>
   <div class="box">
@@ -240,11 +276,11 @@
 <!-- ===================== ENGLISH ===================== -->
 <section id="en" lang="en">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: 29 October 2026</p>
+  <p class="updated">Last updated: 12 November 2026</p>
 
   <p>This policy covers the Banu Apps mobile applications, including
-  <em>Palavra do Dia / Daily Bible Verses</em> and <em>Bible &amp; Daily
-  Devotional</em>. The data controller is the
+  <em>Palavra do Dia / Daily Bible Verses</em>, <em>Bible &amp; Daily
+  Devotional</em> and <em>Pomodorus</em>. The data controller is the
   person named in the <a href="#impressum-en">legal notice</a>.</p>
 
   <h2>Data that stays on your device</h2>
@@ -254,16 +290,25 @@
   <p>In <em>Bible &amp; Daily Devotional</em> the same applies to your notes,
   highlights, reading progress and reading plans — as long as you do not sign
   in. Signing in is optional; the app works fully without an account.</p>
+  <p>In <em>Pomodorus</em> the same applies to your tasks, focus history
+  (minutes and cycles per day), streak, schedule, notes (including the
+  distraction box and focus log) and timer settings — as long as you do not
+  turn on cloud backup. Backup is optional; the app works fully without an
+  account.</p>
 
   <h2>Data that is processed</h2>
   <ul>
-    <li><strong>Account and sync (<em>Bible &amp; Daily Devotional</em> only,
-    optional).</strong> If you sign in with Google, Firebase Authentication
-    gives us your name, email address, profile picture and a user ID. Cloud
+    <li><strong>Account and sync (<em>Bible &amp; Daily Devotional</em> and
+    <em>Pomodorus</em>, optional).</strong> If you sign in with Google,
+    Firebase Authentication gives us your name, email address, profile
+    picture and a user ID. In <em>Bible &amp; Daily Devotional</em>, Cloud
     Firestore then stores your notes and highlights, reading progress,
     reading-plan progress, streak and app settings (language, Bible version,
-    font size, colours, reminder time), so they are available on your other
-    devices. Only your account can access them. The legal basis is providing
+    font size, colours, reminder time). In <em>Pomodorus</em>, it stores your
+    tasks, focus history, streak and goals, schedule, notes and app settings
+    (durations, theme, timer dial, reminders). This is so your data is
+    available on your other devices and comes back if you change phones.
+    Only your account can access it. The legal basis is providing
     the feature you asked for (Art. 6(1)(b) GDPR).</li>
     <li><strong>Advertising (Google AdMob).</strong> The free version shows
     ads. To do that, AdMob processes your advertising ID, an approximate region
@@ -281,8 +326,8 @@
     <li><strong>Feedback form.</strong> Only if you send it yourself: your
     message, the app version and your device model. An email address is sent
     only if you choose to type one — without it we cannot reply. If you are
-    signed in to <em>Bible &amp; Daily Devotional</em>, your user ID is sent
-    too.</li>
+    signed in to <em>Bible &amp; Daily Devotional</em> or
+    <em>Pomodorus</em>, your user ID is sent too.</li>
     <li><strong>Abuse protection and configuration (Firebase App Check,
     Google Play Integrity, Firebase Remote Config).</strong> Technical
     identifiers of the app installation, used to check that requests come
@@ -316,22 +361,22 @@
 
   <h2 id="delete-en">Data deletion</h2>
   <p>To request deletion of your data from the <strong>Palavra do Dia /
-  Daily Bible Verses</strong> and <strong>Bible &amp; Daily
-  Devotional</strong> apps by <strong>Banu Apps</strong>, follow these
-  steps:</p>
+  Daily Bible Verses</strong>, <strong>Bible &amp; Daily
+  Devotional</strong> and <strong>Pomodorus</strong> apps by <strong>Banu
+  Apps</strong>, follow these steps:</p>
   <ol>
     <li>Send an email to <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a> with the subject
     <em>Data deletion</em>.</li>
     <li>State the app, your device model and, if you have written to us
     before, the email address you used then. If you signed in to <em>Bible
-    &amp; Daily Devotional</em>, also give the email address of that Google
-    account. That is what lets us find your record.</li>
+    &amp; Daily Devotional</em> or <em>Pomodorus</em>, also give the email
+    address of that Google account. That is what lets us find your record.</li>
     <li>We confirm the deletion within 30 days.</li>
   </ol>
   <p><strong>What is deleted:</strong> the feedback messages you sent and the
   email address you gave with them; for an account in <em>Bible &amp; Daily
-  Devotional</em>, also everything listed under “Delete your account”
-  below.</p>
+  Devotional</em> or <em>Pomodorus</em>, also everything listed under
+  “Delete your account” below.</p>
   <p><strong>What you delete yourself:</strong> favourites, history, streak,
   reminders and settings live only on your device — uninstalling the app
   erases them, with no request needed.</p>
@@ -359,6 +404,26 @@
   uninstall the app (deleting in the app removes it as well), and the
   pseudonymous usage and crash data, which expire after 2 to 14 months.</p>
 
+  <h3 id="account-pomodorus-en">Delete your account (<em>Pomodorus</em>)</h3>
+  <ol>
+    <li><strong>In the app:</strong> <em>Settings → Delete account and
+    data</em> (at the bottom of the screen, shown only while backup is on),
+    type <em>DELETE</em> and confirm. Deletion is immediate.</li>
+    <li><strong>Without the app:</strong> email
+    <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a>
+    with the subject <em>Account deletion – Pomodorus</em> and the email
+    address of the Google account you signed in with. We delete it within
+    30 days and confirm to you.</li>
+  </ol>
+  <p><strong>What is deleted:</strong> the account (name, email address,
+  profile picture, user ID) and everything stored in the cloud — tasks,
+  focus history, streak, schedule, notes and settings. We keep no copy.
+  Feedback you sent while signed in is deleted too, on request.</p>
+  <p><strong>What is kept:</strong> deleting in the app also erases the copy
+  on your device. A premium purchase is not lost: it belongs to your Google
+  Play account and comes back the next time you open the app. Pseudonymous
+  usage and crash data expire after 2 to 14 months.</p>
+
   <h2 id="impressum-en">Legal notice and contact</h2>
   <div class="box">
     <address>
@@ -374,10 +439,11 @@
 <!-- ===================== PORTUGUÊS ===================== -->
 <section id="pt" lang="pt-BR">
   <h1>Política de Privacidade</h1>
-  <p class="updated">Última atualização: 29 de outubro de 2026</p>
+  <p class="updated">Última atualização: 12 de novembro de 2026</p>
 
   <p>Esta política vale para os aplicativos da Banu Apps, incluindo
-  <em>Palavra do Dia</em> e <em>Bíblia e Devocional Diário</em>. O responsável pelo tratamento dos dados é a pessoa
+  <em>Palavra do Dia</em>, <em>Bíblia e Devocional Diário</em> e
+  <em>Pomodorus</em>. O responsável pelo tratamento dos dados é a pessoa
   indicada em <a href="#impressum-pt">quem somos e contato</a>.</p>
 
   <h2>Dados que ficam no seu aparelho</h2>
@@ -388,17 +454,27 @@
   marcações, progresso de leitura e planos de leitura — enquanto você não
   entrar com uma conta. Entrar é opcional; o app funciona inteiro sem
   conta.</p>
+  <p>No <em>Pomodorus</em> vale o mesmo para suas tarefas, o histórico de
+  foco (minutos e ciclos por dia), a sequência, o cronograma, as notas
+  (incluindo a caixa de distrações e o diário de foco) e os ajustes do
+  cronômetro — enquanto você não ativar o backup na nuvem. O backup é
+  opcional; o app funciona inteiro sem conta.</p>
 
   <h2>Dados que são tratados</h2>
   <ul>
-    <li><strong>Conta e sincronização (só no <em>Bíblia e Devocional
-    Diário</em>, opcional).</strong> Se você entrar com o Google, recebemos
-    pelo Firebase Authentication o seu nome, e-mail, foto de perfil e um
-    identificador de usuário. O Cloud Firestore passa então a guardar suas
+    <li><strong>Conta e sincronização (no <em>Bíblia e Devocional
+    Diário</em> e no <em>Pomodorus</em>, opcional).</strong> Se você entrar
+    com o Google, recebemos pelo Firebase Authentication o seu nome, e-mail,
+    foto de perfil e um identificador de usuário. No <em>Bíblia e Devocional
+    Diário</em>, o Cloud Firestore passa então a guardar suas
     notas e marcações, o progresso de leitura, o progresso nos planos de
     leitura, a sua sequência e os ajustes do app (idioma, versão da Bíblia,
-    tamanho da letra, cores, horário do lembrete), para que estejam nos seus
-    outros aparelhos. Só a sua conta tem acesso a eles. A base é a execução
+    tamanho da letra, cores, horário do lembrete). No <em>Pomodorus</em>, ele
+    guarda suas tarefas, o histórico de foco, a sequência e as metas, o
+    cronograma, as notas e os ajustes do app (durações, tema, mostrador,
+    lembretes). Tudo isso serve para que os dados estejam nos seus outros
+    aparelhos e voltem se você trocar de celular. Só a sua conta tem acesso
+    a eles. A base é a execução
     do recurso que você pediu (art. 7º, V, da LGPD; art. 6º, 1, b, do
     GDPR).</li>
     <li><strong>Anúncios (Google AdMob).</strong> A versão gratuita exibe
@@ -406,7 +482,7 @@
     região aproximada obtida do endereço IP e as interações com os anúncios.
     A base é o consentimento que você dá ou recusa na primeira abertura do
     app. Você pode redefinir ou excluir o identificador de publicidade a
-    qualquer momento nos ajustes do Android. Você pode mudar a sua decisão a qualquer momento no app, em <em>Ajustes → Sobre → Opções de privacidade</em>.</li>
+    qualquer momento nos ajustes do Android. Você pode mudar a sua decisão a qualquer momento no app, em <em>Ajustes → Sobre → Opções de privacidade</em> (no <em>Pomodorus</em>, <em>Configurações → Sobre → Opções de privacidade</em>).</li>
     <li><strong>Relatórios de falha (Firebase Crashlytics).</strong> Se o app
     fechar sozinho, recebemos o relatório do erro, o modelo do aparelho, a
     versão do Android e o estado do app no momento da falha, para corrigir o
@@ -418,8 +494,8 @@
     <li><strong>Formulário de feedback.</strong> Só se você mesmo enviar: a sua
     mensagem, a versão do app e o modelo do aparelho. O e-mail só é enviado se
     você optar por escrevê-lo — sem ele não temos como responder. Se você
-    estiver conectado no <em>Bíblia e Devocional Diário</em>, vai junto o seu
-    identificador de usuário.</li>
+    estiver conectado no <em>Bíblia e Devocional Diário</em> ou no
+    <em>Pomodorus</em>, vai junto o seu identificador de usuário.</li>
     <li><strong>Proteção contra abuso e configuração (Firebase App Check,
     Google Play Integrity, Firebase Remote Config).</strong> Identificadores
     técnicos da instalação do app, usados para conferir que os pedidos vêm de
@@ -454,21 +530,22 @@
 
   <h2 id="delete-pt">Exclusão de dados</h2>
   <p>Para pedir a exclusão dos seus dados dos apps
-  <strong>Palavra do Dia</strong> e <strong>Bíblia e Devocional
-  Diário</strong>, da <strong>Banu Apps</strong>, siga estes passos:</p>
+  <strong>Palavra do Dia</strong>, <strong>Bíblia e Devocional
+  Diário</strong> e <strong>Pomodorus</strong>, da <strong>Banu
+  Apps</strong>, siga estes passos:</p>
   <ol>
     <li>Envie um e-mail para <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a> com o assunto
     <em>Exclusão de dados</em>.</li>
     <li>Diga no corpo da mensagem qual é o app, o modelo do seu aparelho e,
     se você já nos escreveu antes, o e-mail que usou na ocasião. Se entrou
-    com conta no <em>Bíblia e Devocional Diário</em>, diga também o e-mail
-    dessa conta Google. É o que nos permite localizar o seu registro.</li>
+    com conta no <em>Bíblia e Devocional Diário</em> ou no
+    <em>Pomodorus</em>, diga também o e-mail dessa conta Google. É o que nos permite localizar o seu registro.</li>
     <li>Respondemos confirmando a exclusão em até 30 dias.</li>
   </ol>
   <p><strong>O que é excluído:</strong> as mensagens de feedback que você
   enviou e o endereço de e-mail que tiver deixado junto delas; se você tem
-  conta no <em>Bíblia e Devocional Diário</em>, também tudo o que está em
-  “Excluir a conta”, abaixo.</p>
+  conta no <em>Bíblia e Devocional Diário</em> ou no <em>Pomodorus</em>,
+  também tudo o que está em “Excluir a conta”, abaixo.</p>
   <p><strong>O que você mesmo exclui:</strong> favoritos, histórico,
   sequência, lembretes e ajustes ficam só no seu aparelho — desinstalar o app
   apaga tudo isso, sem precisar pedir nada.</p>
@@ -495,6 +572,27 @@
   <p><strong>O que é mantido:</strong> a cópia no seu aparelho, até você
   desinstalar o app (a exclusão feita no app também a apaga), e os dados
   pseudonimizados de uso e de falha, que expiram em 2 a 14 meses.</p>
+
+  <h3 id="account-pomodorus-pt">Excluir a conta (<em>Pomodorus</em>)</h3>
+  <ol>
+    <li><strong>No app:</strong> <em>Configurações → Excluir conta e
+    dados</em> (no fim da tela, só aparece com o backup ativo), digite
+    <em>EXCLUIR</em> e confirme. A exclusão é imediata.</li>
+    <li><strong>Sem o app:</strong> envie um e-mail para
+    <a href="mailto:baraldihenrique@gmail.com">baraldihenrique@gmail.com</a>
+    com o assunto <em>Exclusão de conta – Pomodorus</em> e o e-mail da conta
+    Google com que você entrou. Excluímos em até 30 dias e confirmamos para
+    você.</li>
+  </ol>
+  <p><strong>O que é excluído:</strong> a conta (nome, e-mail, foto de
+  perfil, identificador de usuário) e todo o conteúdo guardado na nuvem —
+  tarefas, histórico de foco, sequência, cronograma, notas e ajustes. Não
+  fica cópia conosco. O feedback que você enviou conectado também é apagado,
+  a pedido.</p>
+  <p><strong>O que é mantido:</strong> a exclusão feita no app também apaga
+  a cópia do seu aparelho. Um premium comprado não se perde: ele pertence à
+  sua conta do Google Play e volta na próxima abertura do app. Os dados
+  pseudonimizados de uso e de falha expiram em 2 a 14 meses.</p>
 
   <h2 id="impressum-pt">Quem somos e contato</h2>
   <div class="box">
